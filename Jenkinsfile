@@ -2,7 +2,10 @@ pipeline {
 
  agent any
 
- tools {jdk 'JAVA_HOME’, maven 'M2_HOME'}
+  tools {
+         jdk 'JAVA_HOME'
+         maven 'M2_HOME'
+     }
 
  stages {
 
@@ -12,7 +15,7 @@ pipeline {
 
                git branch: 'master',
 
-               url: ' https://github.com/hwafa/timesheetproject.git'
+               url: 'https://github.com/zied-gh/jenkins'
 
           }
 
